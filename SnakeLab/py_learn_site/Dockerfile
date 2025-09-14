@@ -14,7 +14,7 @@ COPY SnakeLab/SnakeLab/py_learn_site/requirements.txt ./requirements.txt
 RUN python -m pip install --upgrade pip setuptools wheel && \
     pip install --no-cache-dir -r requirements.txt
 
-# копируем код из подпапки
+# копируем приложение из подпапки
 COPY SnakeLab/SnakeLab/py_learn_site/ ./
 
 ENV PYTHONUNBUFFERED=1 \
